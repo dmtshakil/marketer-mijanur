@@ -208,31 +208,31 @@ $(document).ready(function () {
 
 
 
-$(document).ready(function () {
-    $(".nav-link").click(function () {
-        // Remove active class from all nav links
-        $(".nav-link").removeClass("active");
-        // Add active class to clicked link
-        $(this).addClass("active");
+// $(document).ready(function () {
+//     $(".nav-link").click(function () {
+//         // Remove active class from all nav links
+//         $(".nav-link").removeClass("active");
+//         // Add active class to clicked link
+//         $(this).addClass("active");
 
-        // Hide all card groups
-        $("div[id$='-cards']").addClass("d-none");
-        // Show the related card group
-        const target = $(this).attr("id") + "-cards";
-        $("#" + target).removeClass("d-none");
-    });
-});
+//         // Hide all card groups
+//         $("div[id$='-cards']").addClass("d-none");
+//         // Show the related card group
+//         const target = $(this).attr("id") + "-cards";
+//         $("#" + target).removeClass("d-none");
+//     });
+// });
 
 
-$(document).ready(function () {
-    // Smooth scroll for nav links
-    $('nav ul li a').click(function (e) {
-        e.preventDefault(); // Prevent default anchor click behavior
-        const target = $(this).attr('href'); // Get the target section ID
-        const targetPosition = $(target).offset().top; // Get the position of the target section
+// $(document).ready(function () {
+//     // Smooth scroll for nav links
+//     $('nav ul li a').click(function (e) {
+//         e.preventDefault(); // Prevent default anchor click behavior
+//         const target = $(this).attr('href'); // Get the target section ID
+//         const targetPosition = $(target).offset().top; // Get the position of the target section
 
-        $('html, body').animate({
-            scrollTop: targetPosition - 50 // Scroll with offset (50px for nav height)
-        }, 800); // Duration in milliseconds
-    });
-});
+//         $('html, body').animate({
+//             scrollTop: targetPosition - 50 // Scroll with offset (50px for nav height)
+//         }, 800); // Duration in milliseconds
+//     });
+// });
