@@ -20,9 +20,11 @@ $(document).ready(function() {
     function adjustImageSize() {
       const windowWidth = $(window).width();
       if (windowWidth < 768) {
-        $('.image-content img').css('width', '350px');
+        $('.image-content img').css('width', '330px');
+        $('.image-content1 img').css('width', '350px');
       } else {
         $('.image-content img').css('width', '390px');
+        $('.image-content1 img').css('width', '390px');
       }
     }
 

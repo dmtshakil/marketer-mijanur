@@ -5,6 +5,23 @@
     margin: 0px;
     padding: 0px;
 }
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #2a3d40;
+  transform: translateX(-23%);
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  box-shadow: 0 0 15px #fffeed;
+  width: 315px;
+}
 .navbar{
     border-bottom: 1px solid black;
     box-shadow: 0 0 20px;
@@ -235,7 +252,7 @@
 .service{
     background-color: #F72C5B;
     color: #E4F1AC;
-    padding: 5px;
+    padding: 5px 20px;
     font-size: 20px;
     border-radius: 15px;
 }
